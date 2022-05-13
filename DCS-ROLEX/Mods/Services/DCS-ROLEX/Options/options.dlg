@@ -1,0 +1,846 @@
+--DCS-ROLEX Special Options Page
+
+-- Skins
+
+local EditBoxSkin = {
+	["params"] = {
+		["name"] = "editBoxSkin_loginNew", -- editBoxSkin_login
+	}
+}
+
+local CheckBoxSkin = {
+	["params"] = {
+		["name"] = "checkBoxSkin_options",
+	}
+}
+
+local TitleSkin = {
+	["params"] = {
+		["name"] = "staticOptionsTitleSkin",
+	},
+	["states"] = {
+		["released"] = {
+			[1] = {
+				["text"] = {
+					["horzAlign"] = {
+						["type"] = "min"
+					}
+				}
+			}
+		}
+	}
+}
+
+local LabelSkin = {
+	["params"] = {
+		["name"] = "staticOptionsCaptionSkin",
+	}
+}
+
+local HelpSkin = {
+	["params"] = {
+		["name"] = "staticSkin2",
+	},
+	["states"] = {
+		["released"] = {
+			[1] = {
+				["text"] = {
+					["fontSize"] = 10,
+					["horzAlign"] = {
+						["type"] = "min"
+					}
+				}
+			}
+		}
+	}
+}
+
+local ComboListSkin = {
+	["params"] = {
+		["name"] = "comboListSkin_options",
+	}
+}
+
+local anchor_titleRow = 25
+local anchor_titleColumn = 300
+
+local anchor_headerRow = 60
+local anchor_headerDefault_x = 180
+
+local anchor_headerCaution_x = 330
+local anchor_headerCautionMin_x = 415
+
+local anchor_headerWarning_x = 530
+local anchor_headerWarningMin_x = 615
+
+local row_spacing = 50
+local anchor_row01 = 85
+local anchor_row02 = row_spacing + anchor_row01
+local anchor_row03 = row_spacing + anchor_row02
+local anchor_row04 = row_spacing + anchor_row03
+local anchor_row05 = row_spacing + anchor_row04
+local anchor_row06 = row_spacing + anchor_row05
+local anchor_row07 = row_spacing + anchor_row06
+local anchor_row08 = row_spacing + anchor_row07
+local anchor_row09 = row_spacing + anchor_row08
+local anchor_row10 = row_spacing + anchor_row09
+local anchor_row11 = row_spacing + anchor_row10
+local anchor_row12 = row_spacing + anchor_row11
+
+local column_spacing = 150
+local anchor_column01 = 57
+local anchor_column02 = column_spacing + anchor_column01
+local anchor_column03 = column_spacing + anchor_column02
+local anchor_column04 = column_spacing + anchor_column03 - 30
+local anchor_column05 = column_spacing + anchor_column04 - 70
+local anchor_column06 = column_spacing + anchor_column05 - 30
+local anchor_column07 = column_spacing + anchor_column06
+
+-- Content
+
+dialog = {
+	["children"] = {
+			["containerPlugin"] = {
+				["children"] =  {
+
+					-----------
+					-- Title --
+					-----------
+					["DcsRolexTitleLabel"] = {
+						["params"] = {
+							["enabled"] = true,
+							["bounds"] = {
+								["x"] = anchor_titleColumn,
+								["y"] = anchor_titleRow,
+								["w"] = 400,
+								["h"] = 25,
+							},
+							["visible"] = true,
+							["tooltip"] = "",
+							["zindex"] = 0,
+							["text"] = "$TITLE",
+						},
+						["skin"] = TitleSkin,
+						["type"] = "Static",
+					},
+
+					------------
+					-- Labels --
+					------------
+				
+					["defaultColorLabel"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 150,
+								["x"] = anchor_headerDefault_x,
+								["y"] = anchor_headerRow,
+							},
+							["enabled"] = true,
+							["text"] = "Default",
+							["tooltip"] = "Default color of the time display.",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "staticOptionsTitleSkin",
+							},
+						},
+						["type"] = "Static",
+					},
+					
+					["cautionColorLabel"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 150,
+								["x"] = anchor_headerCaution_x,
+								["y"] = anchor_headerRow,
+							},
+							["enabled"] = true,
+							["text"] = "Caution",
+							["tooltip"] = "Caution color of the time display.",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "staticOptionsTitleSkin",
+							},
+						},
+						["type"] = "Static",
+					},
+					
+					["cautionMinLabel"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 150,
+								["x"] = anchor_headerCautionMin_x,
+								["y"] = anchor_headerRow,
+							},
+							["enabled"] = true,
+							["text"] = "min",
+							["tooltip"] = "Time until the time turns color.",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "staticOptionsTitleSkin",
+							},
+						},
+						["type"] = "Static",
+					},
+					
+					["warningColorLabel"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 150,
+								["x"] = anchor_headerWarning_x,
+								["y"] = anchor_headerRow,
+							},
+							["enabled"] = true,
+							["text"] = "Warning",
+							["tooltip"] = "Warning color of the time display.",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "staticOptionsTitleSkin",
+							},
+						},
+						["type"] = "Static",
+					},
+					
+					["warningMinLabel"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 150,
+								["x"] = anchor_headerWarningMin_x,
+								["y"] = anchor_headerRow,
+							},
+							["enabled"] = true,
+							["text"] = "min",
+							["tooltip"] = "Time until the time turns color.",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "staticOptionsTitleSkin",
+							},
+						},
+						["type"] = "Static",
+					},
+					
+					-----------
+					-- row01 --
+					------------
+						
+					["stopwatchCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "SW - Stopwatch",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["stopwatchDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["stopwatchCautionColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column03,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["stopwatchCautionMinutesEditBox"] = {
+						["params"] = {
+							["angle"] = 0,
+							["bounds"] = {
+								["h"] = 20,
+								["w"] = 30,
+								["x"] = anchor_column04,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["pivotPoint"] = {
+								["x"] = 0,
+								["y"] = 0,
+							},
+							["text"] = "1234",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+							["numeric"] = true,
+							["acceptDecimalPoint"] = true,
+							["multiline"] = false,
+							["textWrapping"] = false,
+						},
+						["skin"] = EditBoxSkin,
+						["type"] = "EditBox",
+					},
+					
+					["stopwatchWarningColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column05,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["stopwatchWarningMinutesEditBox"] = {
+						["params"] = {
+							["angle"] = 0,
+							["bounds"] = {
+								["h"] = 20,
+								["w"] = 30,
+								["x"] = anchor_column06,
+								["y"] = anchor_row01,
+							},
+							["enabled"] = true,
+							["pivotPoint"] = {
+								["x"] = 0,
+								["y"] = 0,
+							},
+							["text"] = "5678",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+							["numeric"] = true,
+							["acceptDecimalPoint"] = true,
+							["multiline"] = false,
+							["textWrapping"] = false,
+						},
+						["skin"] = EditBoxSkin,
+						["type"] = "EditBox",
+					},
+					
+					-----------
+					-- row02 --
+					------------
+						
+					["gameTimeCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "$GAMETIME_CHECKBOX",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["gameTimeDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["gameTimeCautionColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column03,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["gameTimeCautionMinutesEditBox"] = {
+						["params"] = {
+							["angle"] = 0,
+							["bounds"] = {
+								["h"] = 20,
+								["w"] = 30,
+								["x"] = anchor_column04,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["pivotPoint"] = {
+								["x"] = 0,
+								["y"] = 0,
+							},
+							["text"] = "1234",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+							["numeric"] = true,
+							["acceptDecimalPoint"] = true,
+							["multiline"] = false,
+							["textWrapping"] = false,
+						},
+						["skin"] = EditBoxSkin,
+						["type"] = "EditBox",
+					},
+					
+					["gameTimeWarningColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column05,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					["gameTimeWarningMinutesEditBox"] = {
+						["params"] = {
+							["angle"] = 0,
+							["bounds"] = {
+								["h"] = 20,
+								["w"] = 30,
+								["x"] = anchor_column06,
+								["y"] = anchor_row02,
+							},
+							["enabled"] = true,
+							["pivotPoint"] = {
+								["x"] = 0,
+								["y"] = 0,
+							},
+							["text"] = "5678",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+							["numeric"] = true,
+							["acceptDecimalPoint"] = true,
+							["multiline"] = false,
+							["textWrapping"] = false,
+						},
+						["skin"] = EditBoxSkin,
+						["type"] = "EditBox",
+					},
+					
+					-----------
+					-- row03 --
+					------------
+						
+					["realLocalCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row03,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "$REAL_LOCAL_CHECKBOX",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["realLocalDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row03,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					-----------
+					-- row04 --
+					------------
+						
+					["realZuluCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row04,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "$REAL_ZULU_CHECKBOX",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["realZuluDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row04,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					-----------
+					-- row05 --
+					------------
+						
+					["gameLocalCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row05,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "$GAME_LOCAL_CHECKBOX",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["gameLocalDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row05,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+					
+					-----------
+					-- row06 --
+					------------
+						
+					["gameZuluCheckbox"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 18,
+								["w"] = 150,
+								["x"] = anchor_column01,
+								["y"] = anchor_row06,
+							},
+							["enabled"] = true,
+							["state"] = true,
+							["tabOrder"] = 0,
+							["text"] = "$GAMETIME_CHECKBOX",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = CheckBoxSkin,
+						["type"] = "CheckBox",
+					},
+	
+					["gameZuluDefaultColorComboList"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 25,
+								["w"] = 100,
+								["x"] = anchor_column02,
+								["y"] = anchor_row06,
+							},
+							["enabled"] = true,
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "",
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "comboListSkin_options",
+							},
+						},
+						["type"] = "ComboList",
+					},
+				
+				-----------------------------
+				-----Help Labels
+				-----------------------------
+				
+				["MinutesHelpLabel"] = {
+					["params"] = {
+						["bounds"] = {
+							["h"] = 24,
+							["w"] = 500,
+							["x"] = anchor_column03,
+                            ["y"] = anchor_row03,
+						},
+						["enabled"] = true,
+						["text"] = "$MINUTES_HELP",
+						["tooltip"] = "",
+						["visible"] = true,
+						["zindex"] = 0,
+					},
+					["skin"] = HelpSkin,
+					["type"] = "Static",
+				},
+
+				["defaultHelpLabel"] = {
+					["params"] = {
+						["bounds"] = {
+							["h"] = 24,
+							["w"] = 500,
+							["x"] = anchor_column03,
+                            ["y"] = anchor_row03 + row_spacing/2,
+						},
+						["enabled"] = true,
+						["text"] = "$DEFAULT_HELP",
+						["tooltip"] = "",
+						["visible"] = true,
+						["zindex"] = 0,
+					},
+					["skin"] = HelpSkin,
+					["type"] = "Static",
+				},		
+				
+				["defaultHelp3Label"] = {
+					["params"] = {
+						["bounds"] = {
+							["h"] = 24,
+							["w"] = 500,
+							["x"] = anchor_column03,
+                            ["y"] = anchor_row04,
+						},
+						["enabled"] = true,
+						["text"] = "$DEFAULT_HELP3",
+						["tooltip"] = "",
+						["visible"] = true,
+						["zindex"] = 0,
+					},
+					["skin"] = HelpSkin,
+					["type"] = "Static",
+				},		
+				
+				["defaultHelp2Label"] = {
+					["params"] = {
+						["bounds"] = {
+							["h"] = 24,
+							["w"] = 500,
+							["x"] = anchor_column03,
+                            ["y"] = anchor_row04 + row_spacing/2,
+						},
+						["enabled"] = true,
+						["text"] = "$DEFAULT_HELP2",
+						["tooltip"] = "",
+						["visible"] = true,
+						["zindex"] = 0,
+					},
+					["skin"] = HelpSkin,
+					["type"] = "Static",
+				},
+				
+					---------
+					-- End --
+					---------
+
+				},
+			["type"] = "Panel",
+			["skin"] = {
+				["params"] = {
+					["name"] = "panelSkin",
+				},
+			},
+			["params"] = {
+				["enabled"] = true,
+				["bounds"] = {
+					["x"] = 0,
+					["y"] = 0,
+					["w"] = 974,
+					["h"] = 600,
+				},
+				["visible"] = true,
+				["tooltip"] = "",
+				["zindex"] = 2,
+				["text"] = "",
+			},
+		},
+	},
+	["type"] = "Window",
+	["skin"] = {
+		["params"] = {
+			["name"] = "windowSkin",
+		},
+	},
+	["params"] = {
+		["bounds"] = {
+			["h"] = 851,
+			["w"] = 1135,
+			["x"] = 0,
+			["y"] = 0,
+		},
+		["draggable"] = true,
+		["enabled"] =  true,
+		["hasCursor"] =  true,
+		["lockFlow"] = false,
+		["modal"] = false,
+		["text"] = "dialog",
+		["zOrder"] = 1,
+	},
+}
