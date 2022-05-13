@@ -1,6 +1,8 @@
 # DCS-ROLEX
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/DCS-ROLEX3.png" width="150">  
+
 This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the time.  
-<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/DCS-ROLEX3.png" width="150">
+
 ### DCS- ROLEX Use Case Examples
   - Use the stopwatch for flight time
   - Use the stopwatch to track Time-On-Target for a coordinated attack
@@ -10,7 +12,9 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Toggle the Real and Zulu times to keep track of time in the game and in real life
   - Change the text to White for night missions
   - Etc...
-<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic05.jpg">
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic06.jpg">  
+
+_Settings can be changed during a mission too! You can see DCS-ROLEX in the top right of the screen._
 
 ## Download and Install
 1. Download DCS-ROLEX, which can be found at the ED User Files soon (TM).
@@ -25,7 +29,7 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
 - Passes Intregity Check
 - VR Ready
 - Color Select
-- Color change based on time for stopwatch and game time
+- Color change based on time for Stopwatch and Game Time
 - Enable/Disable/Edit at any time, in the main menu or in a mission
 - Stopwatch reset hotkey
 - Show/Hide hotkey
@@ -46,7 +50,10 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Cyan
   - Orange
   - Black
-<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic08.jpg">
+
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic08.jpg">  
+
+_You can see DCS-ROLEX in the top right of the screen._
 ## Uninstall
 To uninstall DCS-ROLEX: 
 - Remove the files you downloaded. 
