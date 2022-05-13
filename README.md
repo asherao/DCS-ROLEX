@@ -3,11 +3,10 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
 
 
 ## Download and Install
-1.
-2.
-3.
-4.
-5.
+1. Download DCS-ROLEX, which can be found at the ED User Files soon (TM).
+2. Once downloaded, extract the files via your preferred zip software.
+3. Click and Drag the `Scripts` folder into your `Saved Games/DCS` folder.
+4. (After reading the rest of this readme) You are now ready to use DCS-ROLEX! Start DCS and Enjoy!
 
 
 ## Features
