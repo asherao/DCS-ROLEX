@@ -1,6 +1,7 @@
 # DCS-ROLEX
-This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the time. 
-- DCS- ROLEX Use Case Examples
+This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the time.  
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/DCS-ROLEX3.png" width="150">
+### DCS- ROLEX Use Case Examples
   - Use the stopwatch for flight time
   - Use the stopwatch to track Time-On-Target for a coordinated attack
   - Use the stopwatch to track Time-On-Top for navigation
@@ -9,12 +10,15 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Toggle the Real and Zulu times to keep track of time in the game and in real life
   - Change the text to White for night missions
   - Etc...
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic05.jpg">
 
 ## Download and Install
 1. Download DCS-ROLEX, which can be found at the ED User Files soon (TM).
 2. Once downloaded, extract the files via your preferred zip software.
 3. Click and Drag the `Scripts` and `Mods` folders into your `Saved Games/DCS` folder.
 4. (After reading the rest of this readme) You are now ready to use DCS-ROLEX! Start DCS and Enjoy!
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic02.png">
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic01.png">
 
 ## Features
 - Single Player and Multiplayer
@@ -42,7 +46,7 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Cyan
   - Orange
   - Black
-
+<img src="https://github.com/asherao/DCS-ROLEX/blob/main/GitImages/pic08.jpg">
 ## Uninstall
 To uninstall DCS-ROLEX: 
 - Remove the files you downloaded. 
