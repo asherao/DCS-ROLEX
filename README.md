@@ -61,7 +61,7 @@ To uninstall DCS-ROLEX:
 - Remove the DCS-ROLEX block of code from `Saved Games/DCS/Config/options.lua`
 
 ## Acknowledgements
-- This is an extention on the original DCS-Scratchpad, which can be found here: https://forum.dcs.world/topic/256390-stopwatch-overlay-for-vr-like-srs-or-scratchpad/
+- This is an extention on the original DCS-Stopwatch, which can be found here: https://forum.dcs.world/topic/256390-stopwatch-overlay-for-vr-like-srs-or-scratchpad/
 - If you are feeling charitable, please feel free to donate. All donations go to supporting the creation of even more free apps and mods for DCS, just like this one! https://www.paypal.com/paypalme/asherao
 - Join Bailey's VoiceAttack Discord Here https://discord.gg/PbYgC5e
 - See more of my mods here https://www.digitalcombatsimulator.com/en/files/filter/user-is-baileywa/apply/?PER_PAGE=100
