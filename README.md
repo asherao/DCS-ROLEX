@@ -1,6 +1,14 @@
 # DCS-ROLEX
-This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the time. This is an extention on the original DCS-Scratchpad, which can be found here: https://forum.dcs.world/topic/256390-stopwatch-overlay-for-vr-like-srs-or-scratchpad/
-
+This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the time. 
+- DCS- ROLEX Use Case Examples
+  - Use the stopwatch for flight time
+  - Use the stopwatch to track Time-On-Target for a coordinated attack
+  - Use the stopwatch to track Time-On-Top for navigation
+  - Have the stopwatch change colors to keep track 2 minute and 3 minute rules
+  - Have the Game Time change colors to know when to take a break
+  - Toggle the Real and Zulu times to keep track of time in the game and in real life
+  - Change the text to White for night missions
+  - Etc...
 
 ## Download and Install
 1. Download DCS-ROLEX, which can be found at the ED User Files soon (TM).
@@ -8,26 +16,23 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
 3. Click and Drag the `Scripts` and `Mods` folders into your `Saved Games/DCS` folder.
 4. (After reading the rest of this readme) You are now ready to use DCS-ROLEX! Start DCS and Enjoy!
 
-
 ## Features
-- Color Selection
+- Single Player and Multiplayer
+- Passes Intregity Check
+- VR Ready
+- Color Select
 - Color change based on time for stopwatch and game time
-- Enable or Disable any time at any time, in the main menu or in a mission
-- Live updates to times
+- Enable/Disable/Edit at any time, in the main menu or in a mission
 - Stopwatch reset hotkey
-- Show/hide hotkey
+- Show/Hide hotkey
 - Clocks/Timers Readouts
- - Stopwatch
- - Game Time
+  - Stopwatch
+  - Game Time
   - Real Local Time
   - Real Zulu Time
   - Game Local Time
   - Game Zulu Time
- - Total Game  Time
-- Single Player and Multiplayer
-- Passes Intregity Check
-- VR Ready
-- Available colors
+- Colors
   - Green
   - Yellow
   - Red
@@ -37,3 +42,16 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Cyan
   - Orange
   - Black
+
+## Uninstall
+To uninstall DCS-ROLEX: 
+- Remove the files you downloaded. 
+- Delete `Saved Games/DCS/Config/ROLEXConfig.lua`. 
+- Remove the DCS-ROLEX block of code from `Saved Games/DCS/Config/options.lua`
+
+## Acknowledgements
+- This is an extention on the original DCS-Scratchpad, which can be found here: https://forum.dcs.world/topic/256390-stopwatch-overlay-for-vr-like-srs-or-scratchpad/
+- If you are feeling charitable, please feel free to donate. All donations go to supporting the creation of even more free apps and mods for DCS, just like this one! https://www.paypal.com/paypalme/asherao
+- Join Bailey's VoiceAttack Discord Here https://discord.gg/PbYgC5e
+- See more of my mods here https://www.digitalcombatsimulator.com/en/files/filter/user-is-baileywa/apply/?PER_PAGE=100
+- Thank you for reading the readme
