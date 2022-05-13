@@ -7,7 +7,7 @@ This **R**elatively **O**bvious **L**ittle **E**poch e**X**tension tells you the
   - Use the stopwatch for flight time
   - Use the stopwatch to track Time-On-Target for a coordinated attack
   - Use the stopwatch to track Time-On-Top for navigation
-  - Have the stopwatch change colors to keep track 2 minute and 3 minute rules
+  - Have the stopwatch change colors to keep track of 2 minute and 3 minute rules
   - Have the Game Time change colors to know when to take a break
   - Toggle the Real and Zulu times to keep track of time in the game and in real life
   - Change the text to White for night missions
