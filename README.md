@@ -56,8 +56,8 @@ _Settings can be changed during a mission too! You can see DCS-ROLEX in the top 
 _You can see DCS-ROLEX in the top right of the screen._
 ## Uninstall
 To uninstall DCS-ROLEX: 
-- Remove the files you downloaded. 
-- Delete `Saved Games/DCS/Config/ROLEXConfig.lua`. 
+- Remove the files you downloaded
+- Delete `Saved Games/DCS/Config/ROLEXConfig.lua`
 - Remove the DCS-ROLEX block of code from `Saved Games/DCS/Config/options.lua`
 
 ## Acknowledgements
